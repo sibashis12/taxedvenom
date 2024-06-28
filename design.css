@@ -1,6 +1,25 @@
 *{
     font-family: Roboto;
     box-sizing: border-box;
+}
+body, html, div, header, nav, ul, li, a{
+    margin:0;
+}
+html, body{
+    scroll-behavior: smooth;
+    background-color: var(--bcolor, white);
+}
+#dark-mode:target{
+    --color:darkcyan;
+    --bcolor:black;
+    --border:black;
+    --tcolor:white;
+    --nyccolor:gold;
+    --cardcolor:black;
+    --cardbg:#00FFFF;
+    --sp:black;
+}
+#light-mode:target{
     --color:darkcyan;
     --bcolor:white;
     --border:white;
@@ -8,19 +27,14 @@
     --nyccolor:gold;
     --cardcolor:black;
     --cardbg:#00FFFF;
-}
-body, html, div, header, nav, ul, li, a{
-    margin:0;
-}
-html{
-    scroll-behavior: smooth;
+    --sp:gold;
 }
 header{
     position:fixed;
     height:4.85rem;
-    border-bottom:1px solid gold;
-    background-color: var(--bcolor, white);
+    border-bottom:1px solid var(--nyccolor, gold);
     margin:0;
+    background-color: var(--bcolor, white);
 }
 .nav{
     display:inline;
@@ -33,12 +47,14 @@ header{
     height:4.74rem;
     width:4.74rem;
     border-radius:50%;
-    border: 3px solid gold;
+    border: 3px solid var(--nyccolor, gold);
+    background-color: var(--bcolor, white);
     margin:0;
 }
 .nav ul{
     width:100vw;
     margin:0;
+    padding:0;
 }
 .nav li{
    display:inline; 
@@ -48,7 +64,7 @@ header{
     display:inline-block;
     height:4.8rem;
     border:2px solid var(--border, white);
-    text-decoration-color:(--color, darkcyan);
+    text-decoration-color:var(--color, darkcyan);
     text-decoration:none;
     font-size: 2em;
     padding: .5em;
@@ -77,7 +93,7 @@ header{
     width:50%;
     font-size:3rem;
     font-family: serif;
-    color:var(--tcolor, black);
+    color:black;
     margin:0;
 }
 .right{
@@ -132,6 +148,7 @@ header{
     margin-top:2rem;
     margin-bottom:2rem;
     width:100vw;
+    background-color: var(--bcolor, white);
 }
 .card{
     font-size:1.25rem;
@@ -149,6 +166,7 @@ header{
     --cardcolor:gold;
     --cardbg:navy;
     --tcolor:gold;
+    --sp:black;
     transform: scale(1.2);
     font-size:1.5rem;
 }
@@ -168,7 +186,7 @@ header{
     right:0;
     bottom:0;
     background:var(--tcolor, black);
-    color:var(--nyccolor, gold);
+    color:var(--sp, gold);
     
 }
 #checker2{
@@ -185,7 +203,7 @@ header{
     right:0;
     bottom:0;
     background:var(--tcolor, black);
-    color:var(--nyccolor, gold);
+    color:var(--sp, gold);
     
 }
 #checker3{
@@ -202,7 +220,7 @@ header{
     right:0;
     bottom:0;
     background:var(--tcolor, black);
-    color:var(--nyccolor, gold);
+    color:var(--sp, gold);
     
 }
 #checker4{
@@ -219,7 +237,7 @@ header{
     right:0;
     bottom:0;
     background:var(--tcolor, black);
-    color:var(--nyccolor, gold);
+    color:var(--sp, gold);
     
 }
 #checker5{
@@ -236,7 +254,7 @@ header{
     right:0;
     bottom:0;
     background:var(--tcolor, black);
-    color:var(--nyccolor, gold);
+    color:var(--sp, gold);
     
 }
 #checker6{
@@ -253,7 +271,7 @@ header{
     right:0;
     bottom:0;
     background:var(--tcolor, black);
-    color:var(--nyccolor, gold);
+    color:var(--sp, gold);
     
 }
 
@@ -270,6 +288,7 @@ header{
     grid-auto-rows: minmax(150 px, auto);
     grid-gap:5vw;
     grid-template-columns: repeat(8, 5vw);
+    background-color: var(--bcolor, white);
 }
 .grid{
     display:flex;
@@ -308,6 +327,18 @@ header{
 .grid4{
     grid-row: span 2;
     grid-column: span 2;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+.icon.top{
+    border-right:0;
+    border-bottom: 1px solid var(--tcolor, black);
+    height:30%;
+    width:100%;
+}
+.icon.top.no{
+    border-bottom:0;
+    border-top: 1px solid var(--tcolor, black);
 }
 .grid5{
     grid-column:span 6;
