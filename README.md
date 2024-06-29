@@ -1,1 +1,1 @@
-This is a project which contains html, css, jpg and png files used to design the frontend of the portfolio website of Sibashis Som. portfolio.html is the main html file and design.css is the file used fro styling.
+This is a project which contains html, css, jpg and png files used to design the frontend of the portfolio website of Sibashis Som. portfolio.html is the main html file and design.css is the file used fro styling. No javascript has been used at all to implement some of the niche features.
