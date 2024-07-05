@@ -158,6 +158,8 @@ header{
     min-height: 50%;
     color:var(--cardcolor, black);
     background-color:var(--cardbg, aqua);
+    box-shadow: 0 0 5px 2px;
+    border-radius: 2px;
     
     -webkit-transition: background-color 0.7s, color 0.7s;
     -moz-transition: background-color 0.7s, color 0.7s;
@@ -306,6 +308,8 @@ header{
     margin:0;
     color:var(--cardcolor, black);
     background-color:var(--cardbg, aqua);
+    box-shadow: 0 0 5px 2px;
+    border-radius: 2px;
     
     -webkit-transition: background-color 0.7s, color 0.7s;
     -moz-transition: background-color 0.7s, color 0.7s;
